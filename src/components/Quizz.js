@@ -2,12 +2,11 @@ import React from 'react';
 import './Quizz.css';
 import Question from './Question';
 import { nanoid } from 'nanoid'
+import { arrShuffle } from './helpers';
 
 export default function Quizz(props) {
 
     const [info, setInfo] = React.useState(undefined)
-    //const [questions, setQuestions] = React.useState([]);
-    //const [answers, setAnswers] = React.useState([]);
 
     React.useEffect(() => {
         fetch("https://opentdb.com/api.php?amount=5&difficulty=medium&type=multiple")
@@ -22,7 +21,8 @@ export default function Quizz(props) {
             <Question 
                 key={nanoid()}
                 question={x.question}
-                answers={[...x.incorrect_answers, x.correct_answer]}
+                answers={arrShuffle([...x.incorrect_answers, x.correct_answer])}
+                correctAnswer={x.correct_answer}
             />
         );
     }

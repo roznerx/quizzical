@@ -1,4 +1,4 @@
-function randomArrayShuffle(array) {
+function arrShuffle(array) {
     let currentIndex = array.length, temporaryValue, randomIndex;
     while (0 !== currentIndex) {
         randomIndex = Math.floor(Math.random() * currentIndex);
@@ -83,7 +83,9 @@ function replacer(x) {
         .replace('&uuml;' , 'ü')	
         .replace('&yacute;', 'ý')	
         .replace('&thorn;', 'þ')
-        .replace('&yuml;', 'ÿ');
+        .replace('&yuml;', 'ÿ')
+        .replace('&ldquo;', '“')
+        .replace('&rdquo;', '”');
 }
 
-export { randomArrayShuffle , replacer }
+export { arrShuffle , replacer }
