@@ -19,23 +19,3 @@
     color: #293264;
     justify-content: left;
 }
-
-.answers-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-}
-
-.answer {
-    color: #293264;
-    box-sizing: border-box;
-    left: 232.26px;
-    top: 252.44px;
-    border: 0.794239px solid #4D5B9E;
-    border-radius: 7.94239px;
-    font-size: 20px;
-    width: fit-content;
-    height: fit-content;
-    padding: 10px;
-}

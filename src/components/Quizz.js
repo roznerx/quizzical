@@ -1,6 +1,7 @@
 import React from 'react';
 import './Quizz.css';
 import Question from './Question';
+import Answers from './Answers';
 import { nanoid } from 'nanoid'
 import { arrShuffle } from './helpers';
 
@@ -14,16 +15,28 @@ export default function Quizz(props) {
             .then(data => setInfo(data.results));
     }, []);    
 
+    let answerArr = (a1, a2) => {
+        let arr = arrShuffle([...a1, a2]);
+        let myObj = {...arr};
+        
+
+    }
+
     let questions;
 
     if (info !== undefined) {
         questions = info.map(x => 
-            <Question 
-                key={nanoid()}
-                question={x.question}
-                answers={arrShuffle([...x.incorrect_answers, x.correct_answer])}
-                correctAnswer={x.correct_answer}
-            />
+            <div key={nanoid()}>
+                <Question 
+                    key={nanoid()}
+                    question={x.question}
+                />
+                <Answers
+                    key={nanoid()}
+                    //answers={arrShuffle([...x.incorrect_answers, x.correct_answer])}
+                    correctAnswer={x.correct_answer}
+                />
+            </div>
         );
     }
 
