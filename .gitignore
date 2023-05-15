@@ -10,8 +10,6 @@
 
 # production
 /build
-/.next
-/next
 .next
 
 # misc
