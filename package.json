@@ -42,5 +42,6 @@
     "eslint": "^8.40.0",
     "eslint-config-next": "^13.4.2",
     "typescript": "5.0.4"
-  }
+  },
+  "export": "next export"
 }
