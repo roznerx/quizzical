@@ -22,10 +22,7 @@
     "start": "next start"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "extends": "next"
   },
   "browserslist": {
     "production": [
@@ -42,6 +39,7 @@
   "devDependencies": {
     "@types/node": "20.1.4",
     "eslint": "^8.40.0",
+    "eslint-config-next": "^13.4.2",
     "typescript": "5.0.4"
   }
 }

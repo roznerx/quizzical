@@ -13,7 +13,7 @@ export const startTitleStyles = {
     fontFamily: "Karla",
     fontStyle: "normal",
     fontWeight: "700",
-    fontSize: "3rem",
+    fontSize: "4rem",
     lineHeight: "37px",
     textAlign: "center",
     color: "#293264",
