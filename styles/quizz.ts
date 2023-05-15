@@ -13,7 +13,7 @@ export const resultTextStyles = {
     fontStyle: 'normal',
     fontWeight: '700',
     fontSize: '1.5rem',
-    lineHeight: '15px',
+    lineHeight: '2rem',
     textAlign: 'center',
     color: '#293264'
 };
