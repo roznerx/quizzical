@@ -39,10 +39,11 @@ export default function MainPage() {
                     {...mainContainerStyles, top: "10vh"}
                 }
             >
-                <Grid item xs={3} />
+                <Grid item xs={1} xl={3} />
                 <Grid 
                     item 
-                    xs={6} 
+                    xs={10}
+                    xl={6} 
                     sx={{
                         justifyContent: "center", 
                         alignItems: "center"
@@ -56,7 +57,7 @@ export default function MainPage() {
                         !start && <Quizz openSnackbar={openSnackbar} />
                     }
                 </Grid>
-                <Grid item xs={3} />
+                <Grid item xs={1} xl={3} />
             </Grid>
         </>
     );

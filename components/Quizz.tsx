@@ -80,7 +80,10 @@ export default function Quizz({ openSnackbar}: QuizzProps) {
     }, [info]);
     
     return (
-        <Grid container sx={{justifyContent: !info ? "center" : "flex-start", gap: "2rem"}}>
+        <Grid 
+            container 
+            sx={{justifyContent: !info ? "center" : "flex-start", gap: "2rem", marginBottom: "2rem"}}
+        >
             {
                 !info ? 
                 <CircularProgress size={"10rem"} sx={{color: "#293264", mt: "20vh"}}/> : 
