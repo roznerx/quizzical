@@ -1,4 +1,4 @@
-# "Quizzical Project" for for "Learn React for free" course by Bob Ziroll 
+# "Quizzical Project" for "Learn React for free" course by Bob Ziroll 
 
 Made by **roznerx** (ignaciorosner@gmail.com)
 
